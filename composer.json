@@ -1,0 +1,32 @@
+{
+    "name": "zhuk/payeer-trade-api",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zhuk\\Payeer\\TradeApi\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor Zhuk",
+            "email": "zhuk@pm.me"
+        }
+    ],
+    "require": {
+        "php": ">=8.1.0",
+        "ext-json": "*",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.23",
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "phpunit/phpunit": "^9.5",
+        "psalm/plugin-phpunit": "^0.17.0"
+    },
+    "scripts": {
+        "test": "phpunit --testdox",
+        "lint": "psalm --show-info=true"
+    }
+}
